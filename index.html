@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Ordering System</h1>
+        <div id="menu">
+            <h2>Menu</h2>
+
+            <div class="menu-item">
+                <img src="pexels-fariphotography-905847.jpg" alt="Pizza">
+                <div class="details">
+                    <span>Pizza - $10</span>
+                    <button onclick="addToOrder('Pizza', 10)">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pexels-valeriya-1639565.jpg" alt="Burger">
+                <div class="details">
+                    <span>Burger - $8</span>
+                    <button onclick="addToOrder('Burger', 8)">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pexels-enginakyurt-1487511.jpg" alt="Pasta">
+                <div class="details">
+                    <span>Pasta - $12</span>
+                    <button onclick="addToOrder('Pasta', 12)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="order-summary">
+            <h2>Your Order</h2>
+            <ul id="order-list"></ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
